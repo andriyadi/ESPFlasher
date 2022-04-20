@@ -1,7 +1,7 @@
 # ESPFlasher
-A simple component and example to flash firmware to ESP32 from.... ESP32 :)
+A simple ESP-IDF component and example project, used to flash firmware to ESP32 from.... ESP32 :)
 
-The project contains a component: [DxFlasher](https://github.com/andriyadi/ESPFlasher/tree/main/components/DxFlasher), that wraps [esp-serial-flasher](https://github.com/espressif/esp-serial-flasher) component due to reasons:
+The project contains an ESP-IDF component: [DxFlasher](https://github.com/andriyadi/ESPFlasher/tree/main/components/DxFlasher), that wraps [esp-serial-flasher](https://github.com/espressif/esp-serial-flasher) component due to following reasons:
 * To provide C++ component
 * Make it easier to use and possibly extend to support more functionality in the future
 
