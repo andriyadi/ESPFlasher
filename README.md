@@ -15,9 +15,19 @@ Just look at [`main.cpp`](https://github.com/andriyadi/ESPFlasher/blob/main/main
 
 Especially check function of `loadHelloworldBinary`. Notes:
 * It loads example firmware which consists of 3 parts: bootloader, partition, and the app itself.
-* The actual bins are in `binaries/Hello-world/ESP32
-* Check `main/bin2array.cmake` to load another firmware.
+* The actual bins are in `binaries/Hello-world/ESP32`
+* Check `main/bin2array.cmake` to load another firmware files. It essentially convert all bin files to C array.
 
+## Hardware connection
+Pins connection between host and target MCU by default is as following. 
+| ESP32 (host) | ESP32 (target)|
+|:------------:|:-------------:|
+|    IO26      |      IO0      |
+|    IO25      |     RESET     |
+|    IO4       |      RX0      |
+|    IO5       |      TX0      |
+
+Of course, you can use other pins and specify them on `DxESPFlasherConfig_t` object.
 
 ## Credits
 This project is not possible without this awesome component: [esp-serial-flasher](https://github.com/espressif/esp-serial-flasher)
